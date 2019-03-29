@@ -23,6 +23,12 @@ pipeline {
         sh 'bash ./jenkins/scripts/cleanup-containers.sh'
       }
     }
+    stage('AWS Deploy') {
+      steps {
+        input(message: 'Would you like to continue deploying', ok: 'Yes!!!')
+        sh 'bash ./jenkins/scripts/aws-deploy.sh'
+      }
+    }
   }
   environment {
     HOME = '.'
