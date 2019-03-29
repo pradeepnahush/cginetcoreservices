@@ -4,7 +4,7 @@
     "containerDefinitions": [
         {
             "name": "restservices", 
-            "image": "pradeepnahush/cginetcoreservices:latest", 
+            "image": "nahushpradeep/cgiprofessionalnetcoreservicesjenkins:latest", 
             "portMappings": [
                 {
                     "containerPort": 80, 
